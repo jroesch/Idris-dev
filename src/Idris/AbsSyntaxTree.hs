@@ -1759,8 +1759,8 @@ showDeclImp o (PInstance _ _ _ _ cs n _ t _ ds)
 showDeclImp _ _ = text "..."
 -- showDeclImp (PImport o) = "import " ++ o
 
-instance Show (Doc OutputAnnotation) where
-  show = flip (displayS . renderCompact) ""
+-- instance Show (Doc OutputAnnotation) where
+--   show = flip (displayS . renderCompact) ""
 
 getImps :: [PArg] -> [(Name, PTerm)]
 getImps [] = []
